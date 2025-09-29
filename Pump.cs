@@ -15,19 +15,19 @@ namespace programming_fundamentals_assignments
             set { status = value; }
         }
     
-   
-
-
 
         public Pump()
         {
 
         }
             
-        public void fuel()
+        public void fuel(Object pump_timer)
         {
-            status = "busy";
-            Console.WriteLine("status = busy");
+            status = "busy ";
+            pump_timer.Start();
+            if (pump_timer.Elapsed == )
+            
+            
         } 
     
         }
