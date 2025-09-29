@@ -8,12 +8,27 @@ namespace programming_fundamentals_assignments
 {
     internal class Pump
     {
-        public string status = "avail";
+        private string status = "avail"; // field
+        public string Status   // property
+        {
+            get { return status; }
+            set { status = value; }
+        }
+    
+   
+
+
 
         public Pump()
         {
+
         }
             
+        public void fuel()
+        {
+            status = "busy";
+            Console.WriteLine("status = busy");
+        } 
     
         }
     }
